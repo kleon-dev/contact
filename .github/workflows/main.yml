@@ -51,6 +51,6 @@ jobs:
           publish_dir: ./dist
 
 env: 
-  VITE_serviceId: ${{ secrets.VITE_serviceId }}
-  VITE_templateId: ${{ secrets.VITE_templateId }}
-  VITE_publicKey: ${{ secrets.VITE_publicKey }}
+  VITE_serviceId: ${{ secrets.VITE_SERVICEID }}
+  VITE_templateId: ${{ secrets.VITE_TEMPLATEID }}
+  VITE_publicKey: ${{ secrets.VITE_PUBLICKEY }}

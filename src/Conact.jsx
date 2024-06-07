@@ -33,26 +33,26 @@ const Contact = () => {
       <form ref={form} onSubmit={sendEmail}>
       
         <div className="first-container-contact">
-        <h1>Contact Us</h1>
-            <div>Name</div>
-            <input type="text" placeholder="name" name="user_name" required /><br />
-            <div>Surname</div>
-            <input type="text" placeholder="surname" name="user_surname" required /><br />
+        <h1>Contattaci</h1>
+            <div>Nome</div>
+            <input type="text" placeholder="nome" name="user_name" required /><br />
+            <div>Cognome</div>
+            <input type="text" placeholder="cognome" name="user_surname" required /><br />
             <div>Email</div>
             <input type="email" placeholder="email" name="user_email" required /><br />
-            <div>Phone number (prefix included)</div>
+            <div>Numero di telefono </div>
             <input
               type="text"
-              placeholder="phone number"
+              placeholder="numero di telefono"
               name="user_phone"
               required
             />
         </div><div className="message-containersecond">
         <h1 style={{opacity: 0}} id="stupidH1">Contact Us</h1>
-            <div>Message</div>
+            <div>Messaggio</div>
             <textarea
               name="user_message"
-              placeholder="message here"
+              placeholder="messaggio qui"
               required
             ></textarea><br />
             <input type="submit" value="Send" />
