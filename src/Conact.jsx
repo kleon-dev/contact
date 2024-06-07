@@ -5,9 +5,9 @@ const Contact = () => {
   const form = useRef();
 
   const emjs = {
-    serviceId: "import.meta.env.VITE_serviceId",
-    templateId: "import.meta.env.VITE_templateId",
-    publicKey: "import.meta.env.VITE_publicKey",
+    serviceId: import.meta.env.VITE_serviceId,
+    templateId: import.meta.env.VITE_templateId,
+    publicKey: import.meta.env.VITE_publicKey,
   };
 
   const sendEmail = (e) => {
