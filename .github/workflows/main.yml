@@ -4,7 +4,10 @@ on:
   push:
     branches:
       - main
-
+env: 
+  VITE_serviceId: ${{ secrets.VITE_serviceId }}
+  VITE_templateId: ${{ secrets.VITE_templateId }}
+  VITE_publicKey: ${{ secrets.VITE_publicKey }}
 jobs:
   build:
     name: Build
@@ -49,7 +52,3 @@ jobs:
         with:
           github_token: ${{secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-env: 
-  VITE_serviceId: ${{ secrets.VITE_serviceId }}
-  VITE_templateId: ${{ secrets.VITE_templateId }}
-  VITE_publicKey: ${{ secrets.VITE_publicKey }}
